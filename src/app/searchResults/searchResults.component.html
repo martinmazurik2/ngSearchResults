@@ -1,14 +1,9 @@
-<form ng-submit="search()" novalidate>
-          <md-input-container class="example-full-width">
-            <input mdInput placeholder="Search for">
-            <md-icon mdSuffix>search</md-icon>
-          </md-input-container>
-          <p>
-          <input [(ngModel)]="searchinput">
-          </p>
-</form>
-
-  
+  <div>
+    <md-input-container (keyup.enter)="onEnter()"> 
+      <input mdInput type="text" placeholder="Search for"  [(ngModel)]="searchterm">
+      <md-icon mdSuffix>search</md-icon>
+    </md-input-container>
+  </div>
   <div>
     <md-list>
       <md-list-item > <!--*ngFor="let searchResult of searchResults"> -->

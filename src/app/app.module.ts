@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { SearchResultsComponent } from './searchResults/searchResults.component';
 import { MaterialModule } from '@angular/material';
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     MaterialModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

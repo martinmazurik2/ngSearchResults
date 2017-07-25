@@ -7,10 +7,9 @@ import { Observable } from 'rxjs';
   styleUrls: ['./searchResults.component.css']
 })
 export class SearchResultsComponent {
-  searchinput: string;
-
-  search()
+  public searchterm;
+  onEnter()
   {
-     this.searchinput = 'called'; //new TestModel()).map(o => JSON.stringify(o));'called!'
+     console.log('called', this.searchterm);
   }
 }
