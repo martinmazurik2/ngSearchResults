@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SearchResultsService } from './services/search.service';
 
 @Component({
   selector: 'app-root',
